@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Office Crawler</title>
+
+    <style>
+      @font-face {
+        font-family: pearsoda;
+        src: url("assets/fonts/PearSoda.ttf");
+      }
+      @font-face {
+        font-family: doomed;
+        src: url("assets/fonts/doomed.ttf");
+      }
+      html,
+      body,
+      #game-container {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #101010;
+      }
+
+      #game-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #game-container canvas {
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="font-family: doomed; position: absolute; visibility: hidden;">
+      .
+    </div>
+    <div style="font-family: pearsoda; position: absolute; visibility: hidden;">
+      .
+    </div>
+    <div id="game-container"></div>
+
+    <script src="js/SceneSplash.js"></script>
+    <script src="js/SceneMainMenu.js"></script>
+    <script src="js/SceneMain.js"></script>
+    <script src="js/SceneGameOver.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
